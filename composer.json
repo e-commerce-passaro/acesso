@@ -1,0 +1,33 @@
+{
+  "name" : "e-commerce-passaro/acesso",
+  "description" : "Uma biblioteca com ferramentas de utilitades para se implantar o ACL em View Models e Controllers",
+  "version": "0.0.1",
+  "type":"library",
+  "homepage":"https://github.com/e-commerce-passaro/acesso",
+  "time":"2017-04-12 10:35:01",
+  "license":"GPL-3.0+",
+  "authors":[{
+	"name":"Marcel Bezerra da Silva",
+	"email":"marcelbzrra@gmail.com",
+	"role":"developer"
+  }],
+  "support": {
+  	"email":"marcelbzrra@gmail.com",
+  	"issues":"https://github.com/e-commerce-passaro/acesso/issues",
+  	"wiki":"https://github.com/e-commerce-passaro/acesso/wiki",
+  	"source":"https://github.com/e-commerce-passaro/acesso/releases"
+  },
+  "require" : {
+    "php" : ">=7.0",
+	"zendframework/zend-mvc" : "3.0.4",
+    "zendframework/zend-view" : "2.9.0",
+    "zendframework/zend-authentication" : "2.5.3",
+    "zendframework/zend-permissions-acl" : "2.6.0"
+  },
+  "keywords" : [ "e-commerce-passaro", "zf3", "ecommerce", "acesso" ],
+  "autoload": {
+        "psr-4": {
+            "Ecompassaro\\Acesso\\": "./src/Acesso"
+        }
+  }  
+}
