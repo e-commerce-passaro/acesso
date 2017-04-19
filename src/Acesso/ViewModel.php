@@ -1,12 +1,12 @@
 <?php
 namespace Ecompassaro\Acesso;
 
-use Zend\View\Model\ViewModel;
+use Zend\View\Model\ViewModel as ZendViewModel;
 
 /**
  * Gerador da estrutura da página do site
  */
-class ViewModel extends ViewModel
+class ViewModel extends ZendViewModel
 {
 
     protected $acesso;
