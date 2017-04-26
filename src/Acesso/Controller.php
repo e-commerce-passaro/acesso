@@ -9,21 +9,23 @@ class Controller extends AbstractActionController
 
     protected $resource;
 
-    protected $defaultRoute;
+    protected $defaultRoute = 'site';
 
     protected $viewModel;
 
-    public function __construct(ViewModel $viewModel, $resource = null, $defaultRoute = '/')
+    public function __construct(ViewModel $viewModel, $resource = null, $defaultRoute = null)
     {
         $this->viewModel = $viewModel;
-    
+        
         if ($resource) {
             $this->resource = $resource;
         }
-    
-        $this->defaultRoute = $defaultRoute;
+        
+        if ($defaultRoute) {
+            $this->defaultRoute = $defaultRoute;
+        }
     }
-    
+
     /**
      *
      * @return \Zend\Http\Response
